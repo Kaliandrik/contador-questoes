@@ -186,8 +186,7 @@ function App() {
       <div className={`status-bar ${connectionStatus.includes('offline') ? 'offline' : ''}`}>
         {loading ? (
           <div className="loading">
-            <div className="spin
-            ner"></div>
+            <div className="spinner"></div>
             <span>Carregando...</span>
           </div>
         ) : (
@@ -195,7 +194,7 @@ function App() {
             <span className="status-indicator">●</span>
             <span className="status-text">{connectionStatus}</span>
             {lastSaved && (
-              <span className="last-saved"> | Última sincronição: {lastSaved}</span>
+              <span className="last-saved"> | : {lastSaved}</span>
             )}
           </div>
         )}
